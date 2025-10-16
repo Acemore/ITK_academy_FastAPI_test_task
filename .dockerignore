@@ -1,6 +1,10 @@
-.git
-.github
-.venv
+*.pyc
 .env
-**/.pytest_cache/
-**/__pycache__/
+.env-sample
+.git/
+.github/
+.gitignore
+.pytest_cache/
+.venv/
+__pycache__/
+README.md
