@@ -14,10 +14,10 @@ git clone git@github.com:Acemore/ITK_academy_FastAPI_test_task.git
 
 Create .env file from .env-sample
 
-Install dependencies entering in the root project folder:
+Install dependencies:
 
 ```bash
-cd ITK_academy_FastAPI_test_task && uv sync
+uv sync
 ```
 
 Run app:
