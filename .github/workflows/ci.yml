@@ -1,0 +1,25 @@
+name: ci
+
+on:
+  push:
+    branches: [ main ]
+  
+  workflow_dispatch:
+
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      
+      - name: Install depenpencies
+        run: |
+          pip install uv
+          uv sync
+                
+      - name: Run lint task
+        run: uv run flake8 app tests
+
+      - name: Run tests
+        run: uv run pytest tests/item_tests.py
