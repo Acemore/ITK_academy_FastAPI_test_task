@@ -5,4 +5,4 @@ services:
       dockerfile: Dockerfile
     environment:
       - LOCAL_URL=http://api:8000/items
-    command: [ "/bin/bash", "-c", "uv run flake app tests && uv run pytest tests/item_tests.py"]
+    command: [ "/bin/bash", "-c", "uv run flake8 app tests && uv run pytest tests/item_tests.py"]
