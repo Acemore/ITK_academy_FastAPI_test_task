@@ -1,0 +1,18 @@
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 8000:8000
+
+  # api-tests:
+  #   depends_on:
+  #     api:
+  #       condition: service_started
+  #   build:
+  #     context: .
+  #     dockerfile: Dockerfile
+  #   environment:
+  #     - LOCAL_URL=http://api:8000/items
+  #   command: [ "/bin/bash", "-c", "uv run pytest tests/item_tests.py"]
