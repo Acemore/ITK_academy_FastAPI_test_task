@@ -6,7 +6,7 @@ This program is web app that provides REST API CRUD operations to work with item
 
 ## To run this app locally
 
-Clone repo:
+Clone repo
 
 ```bash
 git clone git@github.com:Acemore/ITK_academy_FastAPI_test_task.git
@@ -14,25 +14,25 @@ git clone git@github.com:Acemore/ITK_academy_FastAPI_test_task.git
 
 Create .env file from .env-sample
 
-Install dependencies:
+Install dependencies
 
 ```bash
 uv sync
 ```
 
-Run app:
+Run app
 
 ```bash
 uv run uvicorn app.main:app --reload
 ```
 
-Run tests:
+Run tests
 
 ```bash
 uv run pytest tests/item_tests.py
 ```
 
-Run linter check:
+Run linter check
 
 ```bash
 uv run flake8 app tests
