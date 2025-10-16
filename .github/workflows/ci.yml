@@ -12,6 +12,10 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
+
+      - name: Create .env file
+        run:
+          echo "LOCAL_URL='http://localhost:8000/items'" > .env
       
       - name: Install depenpencies
         run: |
