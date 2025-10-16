@@ -1,0 +1,1 @@
+[![docker-ci](https://github.com/Acemore/ITK_academy_FastAPI_test_task/actions/workflows/docker-ci.yml/badge.svg)](https://github.com/Acemore/ITK_academy_FastAPI_test_task/actions/workflows/docker-ci.yml)
